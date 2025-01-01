@@ -64,7 +64,7 @@ export const echo = async (args: string[]): Promise<string> => {
   
   export const repo = async (): Promise<string> => {
     setTimeout(function () {
-      window.open('https://github.com/m4tt72/terminal', '_blank');
+      window.open('https://github.com/gitvivek14/gitvivek14s-Terminal', '_blank');
     }, 1000);
   
     return 'Opening repository...';
