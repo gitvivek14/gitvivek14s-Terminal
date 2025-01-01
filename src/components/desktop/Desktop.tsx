@@ -1,4 +1,4 @@
-import { Terminal, FileText, Image, Folder, Trash2 } from "lucide-react";
+import { Terminal, FileText, Image as Photo, Folder, Trash2 } from "lucide-react";
 import Link from "next/link";
 
 const Desktop = () => {
@@ -20,7 +20,7 @@ const Desktop = () => {
             <span className="mt-2 text-sm text-white font-medium px-2 py-1 rounded bg-black/20 backdrop-blur-sm">Documents</span>
           </div>
           <div className="desktop-icon flex flex-col items-center gap-2 w-24 p-2 rounded-lg hover:bg-white/10 cursor-pointer">
-            <Image className="w-12 h-12 text-white" />
+            <Photo  className="w-12 h-12 text-white" />
             <span className="mt-2 text-sm text-white font-medium px-2 py-1 rounded bg-black/20 backdrop-blur-sm">Pictures</span>
           </div>
           <div className="desktop-icon flex flex-col items-center gap-2 w-24 p-2 rounded-lg hover:bg-white/10 cursor-pointer">

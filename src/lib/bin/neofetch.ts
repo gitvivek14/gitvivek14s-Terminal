@@ -145,7 +145,7 @@ const getInfo = () => {
   return message;
 };
 
-export const neofetch = async (_args?: string[]): Promise<string> => {
+export const neofetch = async (): Promise<string> => {
   const art = getArt();
   const info = getInfo();
 

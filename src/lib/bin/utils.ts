@@ -1,14 +1,13 @@
 import packageJson from "../../../package.json"
-import * as bin from "../bin"
 
 export const echo = async (args: string[]): Promise<string> => {
     return args.join(' ') + "\np.s.try cowsay [text] ";
   };
 
-  export const whoami = async (_args: string[]): Promise<string> => {
+  export const whoami = async (): Promise<string> => {
     return 'guest';
   };
-  export const help = async (_args: string[]): Promise<string> => {
+  export const help = async (): Promise<string> => {
     const commandMap = {
       about: 'About me',
       banner: 'Display the header',
@@ -36,34 +35,34 @@ export const echo = async (args: string[]): Promise<string> => {
     [ctrl+c]  - cancel command`;
   };
 
-  export const date = async (_args: string[]): Promise<string> => {
+  export const date = async (): Promise<string> => {
     return new Date().toString();
   };
 
-  export const email = async (_args: string[]): Promise<string> => {
+  export const email = async (): Promise<string> => {
     window.open('mailto:varora2004@gmail.com');
   
     return 'Opening mailto:varora2004@gmail.com...';
   };
-  export const vi = async (_args: string[]): Promise<string> => {
+  export const vi = async (): Promise<string> => {
     return `why use vi? try 'emacs'.`;
   };
   
-  export const vim = async (_args: string[]): Promise<string> => {
+  export const vim = async (): Promise<string> => {
     return `why use vim? try 'emacs'.`;
   };
-  export const emacs = async (_args?: string[]): Promise<string> => {
+  export const emacs = async (): Promise<string> => {
     return `really? emacs? you should be using 'vim'`;
   };
   export const sudo = async (args: string[]): Promise<string> => {
     setTimeout(function () {
-      window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+      // window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
     }, 1000);
   
     return `Permission denied: unable to run the command '${args[0]}' as root.`;
   };
   
-  export const repo = async (_args?: string[]): Promise<string> => {
+  export const repo = async (): Promise<string> => {
     setTimeout(function () {
       window.open('https://github.com/m4tt72/terminal', '_blank');
     }, 1000);
@@ -71,7 +70,7 @@ export const echo = async (args: string[]): Promise<string> => {
     return 'Opening repository...';
   };
 
-  export const banner = (_args?:string[]): string =>{
+  export const banner = (): string =>{
     return (
         `
          ██████╗ ██╗████████╗██╗   ██╗██╗██╗   ██╗███████╗██╗  ██╗ ██╗██╗  ██╗
@@ -89,7 +88,7 @@ The project is open-source 🎉 type 'repo' to check out the repository.
     )
   }
 
-  export const start = (_args?: string[]): string => {
+  export const start = (): string => {
     return `
   C:\\Users\\vivek\\terminal
   

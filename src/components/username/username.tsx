@@ -7,7 +7,7 @@ export const Username = ()=>{
 
     useEffect(()=>{
         setHostname(window.location.hostname);
-    })
+    },[])
 
     return (
         <div>

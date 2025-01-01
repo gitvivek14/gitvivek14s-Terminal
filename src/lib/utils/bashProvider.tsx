@@ -16,7 +16,7 @@ declare global {
 
 // Define the type for bin commands
 type BinCommands = {
-  [key: string]: (args: string[], ...rest: any[]) => Promise<string> | string;
+  [key: string]: (args: string[], ...rest: unknown[]) => Promise<string> | string;
 };
 
 // Cast the imported bin as BinCommands
@@ -114,8 +114,12 @@ export const BashProvider: React.FC<BashProviderProps> = ({ children }) => {
           try {
             const output = await binCommands[cmd](args);
             setHistory(output);
-          } catch (error: any) {
-            setHistory(error.message);
+          }catch (error: unknown) {
+            if (error instanceof Error) {
+              setHistory(error.message);
+            } else {
+              setHistory("An unknown error occurred.");
+            }
           }
         }
       }

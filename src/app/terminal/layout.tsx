@@ -4,10 +4,9 @@ import { useTheme } from '@/lib/utils/themeProvider';
 
 interface Props {
   children: React.ReactNode;
-  onClick: () => void;
 }
 
-const Layout: React.FC<Props> = ({ children, onClick }) => {
+const Layout: React.FC<Props> = ({ children}) => {
   const { theme } = useTheme();
 const inputRef = React.useRef<HTMLInputElement>(null);  
   const onClickAnywhere = () => {
