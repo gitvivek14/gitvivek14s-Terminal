@@ -3,9 +3,7 @@ import { useBash } from "@/lib/utils/bashProvider";
 import { useTheme } from "@/lib/utils/themeProvider";
 import config from "../../../config.json";
 import React, { useEffect } from "react";
-interface IndexPageProps {
-  inputRef: React.MutableRefObject<HTMLInputElement>;
-}
+
 
 import { History } from "@/components/history/History";
 import { Input } from "@/components/Input/Input";
@@ -13,9 +11,6 @@ import { Input } from "@/components/Input/Input";
 const Terminal: React.FC = () => {
   const inputRef = React.useRef<HTMLInputElement>(null);
   const containerRef = React.useRef<HTMLDivElement>(null);
-  const onClickAnywhere = () => {
-    if (inputRef.current) inputRef.current.focus();
-  };
 
   useEffect(() => {
     localStorage.setItem("visitedAt", new Date().toString());

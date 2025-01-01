@@ -8,6 +8,16 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "eslintConfig": {
+    "extends": "next/core-web-vitals",
+    "rules": {
+      "@typescript-eslint/no-unused-vars": ["error", {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_"
+      }]
+    }
+  },
   "author": {
     "name": "Vivek Arora",
     "url": "https://github.com/gitvivek14",

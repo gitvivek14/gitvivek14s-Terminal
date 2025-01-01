@@ -1,6 +1,5 @@
 "use client"
 import React,{useState,useEffect} from "react";
-import Image from "next/image";
 import Desktop from "@/components/desktop/Desktop";
 
 import Loader from "@/components/loader/Loader";
