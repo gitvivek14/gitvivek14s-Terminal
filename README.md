@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Terminal Portfolio
 
-## Getting Started
+A unique, interactive web-based terminal portfolio built with Next.js. This project allows you to showcase your skills, projects, and personal information in a command-line interface style.
 
-First, run the development server:
+## 🚀 Demo
 
-```bash
+https://gitvivek14s-terminal.vercel.app/
+
+## 🖥️ Features
+
+- Interactive command-line interface
+- Custom commands to display various information
+- Responsive design for desktop and mobile devices
+- Easy customization through configuration files
+
+## 🛠️ Technologies Used
+
+- Next.js
+- TypeScript
+- React
+- Tailwind CSS
+
+## 🏁 Getting Started
+
+1. Clone the repository:
+https://github.com/gitvivek14/gitvivek14s-Terminal
+2. Install dependencies:
+cd terminal-portfolio
+npm install
+3. Run the development server:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Customization
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can easily customize this portfolio to make it your own:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Modify the `config.json` file to update personal information, add new commands, or change existing command outputs.
 
-## Learn More
+2. Edit the `lib/bin.utils.ts` file to add new command functionalities or modify existing ones.
 
-To learn more about Next.js, take a look at the following resources:
+## 📄 Available Commands
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[List some of the available commands in your terminal, e.g.]
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `help`: Display available commands
+- `about`: Show information about you
+- `projects`: List your projects
+- `cowsay [text] ` : Fun Command
 
-## Deploy on Vercel
+## 🤝 Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/gitvivek14/gitvivek14s-Terminal/issues).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👤 Author
+
+Your Name
+- GitHub: [@gitvivek14](https://github.com/gitvivek14)
