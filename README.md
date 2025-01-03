@@ -54,5 +54,5 @@ Contributions, issues, and feature requests are welcome! Feel free to check [iss
 
 ## 👤 Author
 
-Your Name
+Vivek
 - GitHub: [@gitvivek14](https://github.com/gitvivek14)
